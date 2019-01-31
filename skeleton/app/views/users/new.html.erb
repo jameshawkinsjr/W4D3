@@ -1,0 +1,14 @@
+<h1> Sign up for a new account!!!!!! </h1>
+
+<form action="<%= users_url %>" method = "post">    
+    <input type="hidden" name="authenticity_token" value="<%=session[:authenticity_token]%>">
+    <label for="user_name">User name
+        <input type="text" name="user[user_name]">
+    </label>
+    <label for="password">Password
+        <input type="password" name="user[password]">
+    </label>
+    <input type="submit" value="sign up">
+</form>
+
+
